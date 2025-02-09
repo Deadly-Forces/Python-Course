@@ -6,5 +6,3 @@ for collection in groceries:
     for food in collection:
         print(food, end=" ")
     print()
-
-
