@@ -12,7 +12,7 @@ options = (("A. 116", "B. 117", "C. 118", "D. 119"),
            ("A. BMW", "B. Toyota", "C. Mitshubishi", "D. Honda"),)
 
 answers = ("C", "D", "A", "A", "A")
-guesses = ()
+guesses = []
 score = 0
 question_num = 0
 
@@ -21,4 +21,20 @@ for question in questions:
     print(question)
     for option in options[question_num]:
         print(option)
+    guess = input("Enter your answer: ")
+    guesses.append(guess)
+    if guess == answers[question_num]:
+        score += 1
+        print("Correct!")
+    else:
+        print("Incorrect!")
+        print("The correct answer is: ", answers[question_num])
     question_num += 1
+
+print("------------------------------------")
+print("Your score is: ", score)
+print("Your guesses: ", guesses)
+
+print("------------------------------------")
+print("Thank you for playing the quiz game!")
+print("-------------Result-----------------")
