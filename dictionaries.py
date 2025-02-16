@@ -12,5 +12,20 @@ capitals = {'USA': 'Washington, D.C.',
 #    print("That capital in the dictionary")
 #else:
 #    print("That capital is not in the dictionary")
-capitals.update({"Germany": "Berlin"})
-print(capitals)
+# capitals.update({"Germany": "Berlin"})
+# print(capitals)
+# capitals.pop("USA")
+# capitals.popitem()
+# capitals.clear()
+
+# keys = capitals.keys()
+# for key in capitals.keys():
+#    print(key)
+
+# values = capitals.values()
+# for value in capitals.values():
+#    print(value)
+
+items = capitals.items()
+for key, value in capitals.items():
+    print(f"{key}: {value}")
