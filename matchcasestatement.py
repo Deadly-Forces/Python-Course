@@ -23,4 +23,3 @@ def days_of_week(day):
 print("Enter a number between 1 and 7")
 day = int(input())
 days_of_week(day)
-            
