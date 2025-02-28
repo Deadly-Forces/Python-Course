@@ -1,6 +1,8 @@
 # Match-case statement (switch): An alternative to using many 'elif' statements
 #                                Execute some code if a value matches a 'case'
-#                                Benifits: Less code, more readable, easier to maintain
+#                                Benefits: Less code, more readable, easier to maintain
+
+from datetime import datetime
 
 def days_of_week(day):
     match day:
@@ -18,8 +20,8 @@ def days_of_week(day):
             print("Saturday")
         case 7:
             print("Sunday")
-        case _:
-            print("Invalid day")
-print("Enter a number between 1 and 7")
-day = int(input())
-days_of_week(day)
+
+# Get the current day of the week (1 is Monday, 7 is Sunday)
+current_day = datetime.now().isoweekday()
+print(f"Today is day number {current_day}")
+days_of_week(current_day)
